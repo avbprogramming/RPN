@@ -17,19 +17,6 @@ public class OPZ {
                 for (int i = 0; i < s.size(); i++) {
                     System.out.println("Ответ: " + s.get(i));
                 }
-                /*
-                ArrayList<Integer> arrayList = xFunction.xFunction(1, 12, 2);
-                for (int i = 0; i < arrayList.size(); i++) {
-                    // String postfix = convert(infix, arrayList.get(i));
-                    // calculation.calculation(postfix);
-
-calculationX str = new calculationX();
-                    // String[] postfixArray = postfix.split(" ");
-                    // int result = str.resultOfRPN(postfixArray);
-                    // System.out.println("Ответ: " + result);
-
-
-                 */
             } else {
                 String postfix = convert(infix);
                 System.out.println(postfix);
@@ -58,9 +45,6 @@ calculationX str = new calculationX();
         // Преобразование строки выражения в массив символов
         char[] chars = expression.toCharArray();
         int N = chars.length;
-        //   if (checkInfix.checkInfix(chars)) {
-        //       chars = fx(x, new String(chars)).toCharArray();
-        //   }
         for (int i = 0; i < N; i++) {
             char ch = chars[i];
 
@@ -169,15 +153,6 @@ calculationX str = new calculationX();
         } else {
             return false;
         }
-    }
-
-    public static String fx(Integer x, String infix) {
-        String stringX = infix.replaceAll("x", Integer.toString(x));
-        char[] chars = infix.toCharArray();
-        //  for (int i = 0; i < chars.length ; i++) {
-        //     if (chars[i] == 'x'){
-        //    }
-        return stringX;
     }
 }
 
